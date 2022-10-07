@@ -1,8 +1,8 @@
 
-.div {
+body {
     /* width: 100%; */
-    background: rgb(142, 221, 142);
     text-align: center;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
@@ -80,6 +80,21 @@
     background-color: #21262d;
     grid-area: f;
     border-radius: 16px;
+}
+
+@media all and (max-width: 500px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 1fr 0.5fr 0.5fr 0.5fr 0.4fr;
+        grid-template-areas:
+        "h"
+        "s"
+        "i"
+        "m1"
+        "m2"
+        "m3"
+        "f";
+    }
 }
 
 
